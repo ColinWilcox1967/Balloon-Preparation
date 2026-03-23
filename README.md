@@ -4,7 +4,11 @@ Coding Problem Around Blowing up Balloons indicating propensity for risk.
 # Build steps
 (1) Open a terminal window. \
 (2) Change into folder that contains the source code.\
-(3) From command line, either run _build.bat_ or enter the following ...
+(3) From command line, either run 
+
+_build.bat_ 
+
+or enter the following ...
 
 _go build -o balloon.exe main.go_ 
 
