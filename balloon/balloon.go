@@ -2,6 +2,7 @@ package balloon
 
 import (
 	"fmt"
+	"strings"
 
 	cmdline "../cmdline"
 )
@@ -20,7 +21,7 @@ func setup() {
 
 func processCommand(command string, balloonSizeLimit int) (bool, bool) {
 	
-	switch (command) {
+	switch (strings.ToUpper(command)) { // Capitalise commands before checking
 		case cmdline.CommandExpand:
 			balloonSize++
 			if balloonSize > balloonSizeLimit {
